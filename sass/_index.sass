@@ -1,0 +1,83 @@
+.promo
+	position: relative
+	margin-bottom: 20px
+	padding-bottom: 50px
+	background: $bg-header
+	+vertical
+	color: #fff 
+.promo__in
+	display: inline-block
+	vertical-align: middle
+	padding: 50px 0 0
+	text-align: left
+	width: 100%
+	+r(768)
+		padding-top: 73px
+	img
+		max-width: 100%
+	.row
+		font-size: 0
+	.col-lg-1,
+	.col-lg-6,
+	.col-lg-5
+		display: inline-block
+		vertical-align: middle
+		float: none
+		font-size: 18px
+.promo__text
+	+rob
+	+light
+	font-size: 18px
+	+r(992)
+		font-size: 14px
+	+r(768)
+		text-align: center
+.promo__title
+	margin-bottom: 20px
+	+slab
+	+bold
+	font-size: 48px
+	+r(1170)
+		font-size: 36px
+	+r(992)
+		font-size: 30px
+.promo__info
+	margin-bottom: 12px
+	+slab
+	+reg
+	font-size: 30px
+	line-height: 1.2
+	+r(1170)
+		font-size: 24px
+	+r(992)
+		font-size: 18px
+.promo__img
+	+r(768)
+		text-align: center
+	img	
+		max-width: 100%
+.map-link
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 40px
+	text-align: center
+	font-size: 12px
+	+bold
+	&_static
+		margin: 55px 0 20px 
+		position: static
+	a
+		display: inline-block
+		position: relative
+		font-size: 14px
+		color: $link 
+		text-transform: uppercase
+		&:hover
+			text-decoration: none
+		&:before
+			content: ""
+			position: absolute
+			top: -30px
+			left: 22px
+			+svg(on-map,20,24)
